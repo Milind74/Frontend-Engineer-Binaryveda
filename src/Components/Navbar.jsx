@@ -5,6 +5,8 @@ import apiteam from "../assets/apiTeam.png"
 import graph from "../assets/graphQL.png"
 import superchargeWorkflow from "../assets/superchargeWorkflow.png"
 import showcase from "../assets/showcase.png"
+import botbot from "../assets/botbot.png"
+
 
 // superchargeWorkflow
 
@@ -143,6 +145,33 @@ const Navbar = () => {
       </div>
 
 {/* //5th layer/ */}
+
+<div className={styles.secondlastchild}>
+       
+
+        <div className={styles.childright1}>
+          <img src={botbot} alt="" />
+        </div>
+
+
+        <div className={styles.secondlastleft}>
+          <div className={styles.childleft1}>
+            <h4>A Slack-boaty for creating and masnging prototypes</h4>
+            <p>
+              Building something special? We're always <br /> looking to work 
+              with partners who wants <br /> to  help the world bring their ideas  to life
+            </p>
+            <div className={styles.childdbtn}>
+              <button className={styles.childbtn2}>Submit you app</button>
+              <button className={styles.childbtn3}>View app docs</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+
 
       
       
