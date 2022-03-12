@@ -142,8 +142,134 @@
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        
-      background-color: lightblue;
+    .child{
+        display: grid;
+        grid-template-rows: 100%;
+        width: 100%;
+    } 
+    .childleft{
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+        height: auto;
     }
+    .childleft1{
+        width: 70%;
+        /* border: 1px solid white; */
+        margin: auto;
+        height: 300px;
+        
+    }
+    .childright{
+        width: 90%;
+        /* border: 1px solid white; */
+        margin-bottom: -100
+        
+        0px;
+    
+        
+    }
+    .childright>img{
+        width: 80%;
+    }
+    .childbtn{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .childbtn1,.childbtn2{
+        width: 35%;
+        border: none;
+        border-radius: 30px;
+        height: 40px;
+        font-size: 12px;
+        margin: 10px;
+    }
+    .childthirdlayer{
+        width: 90%;
+        /* border: 1px solid white; */
+        margin: auto;
+        margin-top: 60%;
+    }
+    
+    .childthirdlayer>h3{
+        width: 90%;
+        margin: auto;
+    }
+    .childthirdlayer>p{
+        width: 80%;
+        margin: auto;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .forthlayer{
+        width: 80%;
+        display: grid;
+        /* border: 1px solid white; */
+        margin:  auto;
+        margin-top: 3%;
+    }
+    .childbtn1{
+        background-color: aqua;
+    }
+    .secondlastchild{
+        display: grid;
+        width: 100%;
+        margin-top: 5%;
+        /* border: 1px solid white; */
+    }
+    .childright1{
+        width: 90%;
+        /* border: 1px solid white; */
+    
+        
+    }
+    .childright1>img{
+        width: 80%;
+    
+    }
+    
+    .childleft2{
+        width: 70%;
+        /* border: 1px solid white; */
+        margin: auto;
+        height: 300px;
+        text-align: center;
+    }
+    .childbtn3{
+        background-color: black;
+        width: 35%;
+        /* border: 1px solid white; */
+        border-radius: 30px;
+        height: 40px;
+        font-size: 12px;
+        margin: 10px;
+        color: white;
+    }
+    .footer{
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* justify-content: space-evenly; */
+        justify-content: center;
+        margin: 2rem;
+        padding: 1rem;
+        margin-top: 5%;
+        gap: 1rem;
+    
+    }
+    .footer1{
+        font-size: 13px;
+        text-align: left;
+    
+    }
+    .footer1>p{
+        color: rgb(158, 145, 145);
+        line-height: 10px;
+    
+    
+    }
+    
   }

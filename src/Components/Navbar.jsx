@@ -19,7 +19,7 @@ const Navbar = () => {
           </a>
           <button
             className={styles.toggle}
-            class="navbar-toggler"
+            class="nav-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -177,7 +177,7 @@ const Navbar = () => {
       {/* //footer */}
 
       <div className={styles.footer}>
-        <div>
+        <div className={styles.footer1}>
           <h5>Marvel</h5>
         </div>
         <div className={styles.footer1}>
