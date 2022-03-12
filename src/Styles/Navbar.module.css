@@ -1,6 +1,6 @@
 .container1{
     width: 100%;
-    height: 888px;
+    height: 100%;
     background-color: black;
     color: white;
 }
@@ -9,7 +9,7 @@
     height: 35px;
     border-radius: 30px;
     font-size: 12px;
-    /* margin-top: 5px; */
+    background-color: white;
 }
 .link, a{
     color: white;
@@ -43,8 +43,8 @@
     
 }
 .childright>img{
-    width: 100%;
-    margin-top: 10%;
+    width: 80%;
+    margin-top: 5%;
 }
 .childbtn{
     display: flex;
@@ -60,4 +60,65 @@
     font-size: 12px;
     margin: 10px;
 }
+.childthirdlayer{
+    width: 40%;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 6%;
+}
 
+.childthirdlayer>h3{
+    width: 90%;
+    margin: auto;
+}
+.childthirdlayer>p{
+    width: 80%;
+    margin: auto;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.forthlayer{
+    width: 80%;
+    display: flex;
+    border: 1px solid white;
+    margin:  auto;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+.childbtn1{
+    background-color: aqua;
+}
+.secondlastchild{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    border: 1px solid white;
+}
+.childright1{
+    width: 50%;
+    border: 1px solid white;
+
+    
+}
+.childright1>img{
+    width: 80%;
+
+}
+
+.childleft2{
+    width: 70%;
+    border: 1px solid white;
+    margin: auto;
+    height: 300px;
+    text-align: center;
+}
+.childbtn3{
+    background-color: black;
+    width: 35%;
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 40px;
+    font-size: 12px;
+    margin: 10px;
+    color: white;
+}
