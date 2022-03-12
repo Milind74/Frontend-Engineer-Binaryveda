@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "../Styles/Navbar.module.css";
 import illustarator from "../assets/illustration.png";
-import apiteam from "../assets/apiTeam.png"
-import graph from "../assets/graphQL.png"
-import superchargeWorkflow from "../assets/superchargeWorkflow.png"
-import showcase from "../assets/showcase.png"
-import botbot from "../assets/botbot.png"
-
+import apiteam from "../assets/apiTeam.png";
+import graph from "../assets/graphQL.png";
+import superchargeWorkflow from "../assets/superchargeWorkflow.png";
+import showcase from "../assets/showcase.png";
+import botbot from "../assets/botbot.png";
 
 // superchargeWorkflow
 
@@ -19,6 +18,7 @@ const Navbar = () => {
             Marvel
           </a>
           <button
+            className={styles.toggle}
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -73,6 +73,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      {/* //first bar */}
 
       <div className={styles.child}>
         <div className={styles.childleft}>
@@ -93,6 +94,7 @@ const Navbar = () => {
           <img src={illustarator} alt="" />
         </div>
       </div>
+      {/* //2nd bar */}
 
       <div className={styles.childthirdlayer}>
         <h3>Experience the freedom to build features,right away.</h3>
@@ -101,36 +103,42 @@ const Navbar = () => {
           integrations for our 2 million users- or simply just for your team
         </p>
       </div>
-
-      <div  className={styles.forthlayer}>
-        <div >
+      {/* //3rd bar */}
+      <div className={styles.forthlayer}>
+        <div>
           <img src={apiteam} alt="" />
           <p>Dedicated API Team</p>
-          <p>Our team are available for user's questions via <br />our Slack Developer Community and Email </p>
+          <p>
+            Our team are available for user's questions via <br />
+            our Slack Developer Community and Email{" "}
+          </p>
         </div>
         <div>
-        <img src={graph} alt="" />
-        <p>Our API uses Graph QL</p>
-        <p>No handling server side.Get many Api's <br/>
-        resopnse in a single request
-        </p>
-
+          <img src={graph} alt="" />
+          <p>Our API uses Graph QL</p>
+          <p>
+            No handling server side.Get many Api's <br />
+            resopnse in a single request
+          </p>
         </div>
         <div>
           <img src={superchargeWorkflow} alt="" />
           <p>Supercharge your workflow</p>
-        <p>Automate workflow, integrate data <br/> and take Marvel to the next level <br/>
-        </p>
+          <p>
+            Automate workflow, integrate data <br /> and take Marvel to the next
+            level <br />
+          </p>
         </div>
       </div>
-{/* second last layer */}
-<div className={styles.secondlastchild}>
+      {/* 4 bar*/}
+      <div className={styles.secondlastchild}>
         <div className={styles.secondlastleft}>
           <div className={styles.childleft1}>
             <h4>Showcase your app in our integration directory</h4>
             <p>
-              Building something special? We're always <br /> looking to work 
-              with partners who wants <br /> to  help the world bring their ideas  to life
+              Building something special? We're always <br /> looking to work
+              with partners who wants <br /> to help the world bring their ideas
+              to life
             </p>
             <div className={styles.childdbtn}>
               <button className={styles.childbtn2}>Submit you app</button>
@@ -144,22 +152,20 @@ const Navbar = () => {
         </div>
       </div>
 
-{/* //5th layer/ */}
+      {/* //5th layer/ */}
 
-<div className={styles.secondlastchild}>
-       
-
+      <div className={styles.secondlastchild}>
         <div className={styles.childright1}>
           <img src={botbot} alt="" />
         </div>
-
 
         <div className={styles.secondlastleft}>
           <div className={styles.childleft1}>
             <h4>A Slack-boaty for creating and masnging prototypes</h4>
             <p>
-              Building something special? We're always <br /> looking to work 
-              with partners who wants <br /> to  help the world bring their ideas  to life
+              Building something special? We're always <br /> looking to work
+              with partners who wants <br /> to help the world bring their ideas
+              to life
             </p>
             <div className={styles.childdbtn}>
               <button className={styles.childbtn2}>Submit you app</button>
@@ -168,13 +174,56 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* //footer */}
 
-
-      
-
-
-      
-      
+      <div className={styles.footer}>
+        <div>
+          <h5>Marvel</h5>
+        </div>
+        <div className={styles.footer1}>
+          <h5>Overview</h5>
+          <p>why Marvel</p>
+          <p>Enterprise</p>
+          <p>Pricing</p>
+          <p>Request a demo</p>
+          <p>Explore</p>
+          <p>Apps</p>
+          <p>Developer API</p>
+        </div>
+        <div className={styles.footer1}>
+          <h5>Features</h5>
+          <p>Wireframing</p>
+          <p>Design</p>
+          <p>Prototyping</p>
+          <p>Collaboration</p>
+          <p>Handoff</p>
+          <p>Integrations</p>
+          <p>Sketch Plugin</p>
+        </div>
+        <div className={styles.footer1}>
+          <h5>Support</h5>
+          <p>Hel Center</p>
+          <p>Terms of Services</p>
+          <p>Privicy</p>
+          <p>Security</p>
+        </div>
+        <div className={styles.footer1}>
+          <h5>Marvel</h5>
+          <p>Blog</p>
+          <p>Our Team</p>
+          <p>Contact Us</p>
+          <p>Success Stories</p>
+          <p>Brand Guidelines</p>
+        </div>
+        <div className={styles.footer1}>
+          <h5>Follow</h5>
+          <p>Twitter</p>
+          <p>Dribbble</p>
+          <p>Facebook</p>
+          <p>Github</p>
+          <p>Workable</p>
+        </div>
+      </div>
     </div>
   );
 };

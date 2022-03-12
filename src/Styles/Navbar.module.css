@@ -25,20 +25,20 @@
 }
 .childleft{
     width: 45%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     height: auto;
 }
 .childleft1{
     width: 70%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: auto;
     height: 300px;
     
 }
 .childright{
     width: 55%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
     
 }
@@ -62,7 +62,7 @@
 }
 .childthirdlayer{
     width: 40%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: auto;
     margin-top: 6%;
 }
@@ -80,7 +80,7 @@
 .forthlayer{
     width: 80%;
     display: flex;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin:  auto;
     justify-content: space-evenly;
     margin-top: 3%;
@@ -92,11 +92,11 @@
     display: flex;
     width: 100%;
     margin-top: 5%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .childright1{
     width: 50%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
     
 }
@@ -107,7 +107,7 @@
 
 .childleft2{
     width: 70%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: auto;
     height: 300px;
     text-align: center;
@@ -115,10 +115,35 @@
 .childbtn3{
     background-color: black;
     width: 35%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 30px;
     height: 40px;
     font-size: 12px;
     margin: 10px;
     color: white;
 }
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 5%;
+
+}
+.footer1{
+    font-size: 13px;
+    text-align: left;
+
+}
+.footer1>p{
+    color: rgb(158, 145, 145);
+    line-height: 10px;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        
+      background-color: lightblue;
+    }
+  }
