@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleTodo } from '../redux/action';
 import Todos from './Todos';
 import styles from "../Styles/Navbar.module.css";
+import {Link} from 'react-router-dom'
 
 
 const TodoList = () => {
@@ -18,8 +19,13 @@ const dispatch =useDispatch();
     console.log(state)
     return (
         <>
+        <p>
+
+<Link style={{color:"blue",textDecoration:"none"}} to = '/'>Back to Home</Link>
+   </p> 
 
 <p>Todays</p>
+
 
            {state.map((el)=>{
                return (
