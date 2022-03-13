@@ -4,7 +4,7 @@ const initialState = {
     todos:[
       {
           id:1,
-          title: "learn redux",
+          title: "Push latest build",
           status:false
       }
     ],

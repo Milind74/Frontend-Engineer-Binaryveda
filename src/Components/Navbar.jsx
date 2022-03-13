@@ -6,6 +6,7 @@ import graph from "../assets/graphQL.png";
 import superchargeWorkflow from "../assets/superchargeWorkflow.png";
 import showcase from "../assets/showcase.png";
 import botbot from "../assets/botbot.png";
+import {Link} from 'react-router-dom'
 
 // superchargeWorkflow
 
@@ -37,12 +38,21 @@ const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a className={styles.link} aria-current="page" href="#">
+                <a className={styles.link} aria-current="page" >
+                  
                   Developer
+                  
                 </a>
               </li>
             </ul>
             <div class="d-flex">
+            <p class="nav-item">
+                <a className={styles.link} aria-current="page">
+                <Link style={{textDecoration:"none"}} to='/todos'>
+                  todo
+                  </Link>
+                </a>
+              </p>
               <p class="nav-item">
                 <a className={styles.link} aria-current="page" href="#">
                   Why Marvel

@@ -1,6 +1,9 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleTodo } from '../redux/action';
+import Todos from './Todos';
+import styles from "../Styles/Navbar.module.css";
+
 
 const TodoList = () => {
 
@@ -15,24 +18,24 @@ const dispatch =useDispatch();
     console.log(state)
     return (
         <>
-           <h1>Todo List</h1>
 
+<p>Todays</p>
 
            {state.map((el)=>{
                return (
-                 <div key = {el.id}>
-                   <div  style={{display:"flex",width:"40%",margin:"auto"}}>
-                      <input style={{marginTop:"20px"}} type="checkbox" onClick={()=>handleToggle(el.id)}/>
+                 <div className={styles.disp} key = {el.id}>
+                   <div   style={{display:"flex",width:"100%",margin:"auto"}}>
+                      <input style={{marginTop:"8px",marginLeft:"30px"}} type="checkbox" onClick={()=>handleToggle(el.id)}/>
+                        {el.status? <p style={{textDecoration:"line-through"}}>{el.title }</p> :  <p>{el.title }</p>}
 
-                        {el.status? <h1 style={{textDecoration:"line-through"}}>{el.title }</h1> :  <h1>{el.title }</h1>}
-                        {/* <p>{`${el.status}`}</p> */}
-
-                        {/* <button onClick={()=>handleToggle(el.id)}>toggleTodo</button>    */}
                    </div>
+
                    </div>
                )
            })
            }
+           <Todos/>
+
         </>
     );
 }
