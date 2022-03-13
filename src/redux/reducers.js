@@ -1,4 +1,4 @@
-import {ADD_TODO,INC_COUNT,DEC_COUNT, ADD_DATA,TOGGLE_TODO, GET_TODO_SUCCESS, GET_TODO_FAILURE} from "./actionTypes"
+import {ADD_TODO,TOGGLE_TODO, GET_TODO_SUCCESS, GET_TODO_FAILURE} from "./actionTypes"
 
 const initialState = {
     todos:[
@@ -8,9 +8,7 @@ const initialState = {
           status:false
       }
     ],
-    counter:0,
-
-    data:[]
+   
 }
 
 const reducer = (state=initialState,action)=>{
@@ -23,24 +21,7 @@ const reducer = (state=initialState,action)=>{
                  todos:[...state.todos,payload],
              }
          }
-         case INC_COUNT:{
-             return {
-                 ...state,
-                 counter:state.counter+payload
-             }
-         }
-         case DEC_COUNT:{
-             return {
-                 ...state,
-                 counter:state.counter-payload
-             }
-         }
-         case ADD_DATA:{
-             return {
-                 ...state,
-                 data:payload
-             }
-         }
+        
          case TOGGLE_TODO:{
              const toggleTodo=state.todos.map((item) =>item.id===payload?{...item,status:!item.status}:item)
 
