@@ -33,12 +33,12 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <p className={styles.link} aria-current="page" >
+                <p  style={{marginTop:"-10px"}} className={styles.link} aria-current="page" >
                   |
                 </p>
               </li>
               <li class="nav-item">
-                <p className={styles.link} aria-current="page" >
+                <p style={{marginTop:"-10px"}} className={styles.link} aria-current="page" >
                   
                   Developer
                   
