@@ -15,9 +15,9 @@ const Navbar = () => {
     <div className={styles.container1}>
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" >
+          <p class="navbar-brand" >
             Marvel
-          </a>
+          </p>
           <button
             className={styles.toggle}
             class="navbar-toggler"
@@ -33,46 +33,44 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a className={styles.link} aria-current="page" >
+                <p className={styles.link} aria-current="page" >
                   |
-                </a>
+                </p>
               </li>
               <li class="nav-item">
-                <a className={styles.link} aria-current="page" >
+                <p className={styles.link} aria-current="page" >
                   
                   Developer
                   
-                </a>
+                </p>
               </li>
             </ul>
             <div class="d-flex">
             <p class="nav-item">
-                <a className={styles.link} aria-current="page">
-                <Link style={{textDecoration:"none"}} to='/todos'>
+                <Link className={styles.link} style={{textDecoration:"none"}} to='/todos'>
                   todo
                   </Link>
-                </a>
               </p>
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" >
+                <p className={styles.link} aria-current="page" >
                   Why Marvel
-                </a>
+                </p>
               </p>
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" >
+                <p className={styles.link} aria-current="page" >
                   Experties
-                </a>
+                </p>
               </p>
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" >
+                <p className={styles.link} aria-current="page" >
                   Pricing
-                </a>
+                </p>
               </p>
 
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" >
+                <p className={styles.link} aria-current="page" >
                   Sign in
-                </a>
+                </p>
               </p>
 
               {/* <input class="div-control me-2" type="search" placeholder="Search" aria-label="Search"> */}
