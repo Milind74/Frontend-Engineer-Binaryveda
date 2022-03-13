@@ -20,13 +20,15 @@ const dispatch =useDispatch();
 
            {state.map((el)=>{
                return (
-                   <div key = {el.id} style={{display:"flex"}}>
+                 <div key = {el.id}>
+                   <div  style={{display:"flex",width:"40%",margin:"auto"}}>
                       <input style={{marginTop:"20px"}} type="checkbox" onClick={()=>handleToggle(el.id)}/>
 
                         {el.status? <h1 style={{textDecoration:"line-through"}}>{el.title }</h1> :  <h1>{el.title }</h1>}
                         {/* <p>{`${el.status}`}</p> */}
 
                         {/* <button onClick={()=>handleToggle(el.id)}>toggleTodo</button>    */}
+                   </div>
                    </div>
                )
            })
