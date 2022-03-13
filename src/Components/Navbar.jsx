@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className={styles.container1}>
       <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" >
             Marvel
           </a>
           <button
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a className={styles.link} aria-current="page" href="#">
+                <a className={styles.link} aria-current="page" >
                   |
                 </a>
               </li>
@@ -54,23 +54,23 @@ const Navbar = () => {
                 </a>
               </p>
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" href="#">
+                <a className={styles.link} aria-current="page" >
                   Why Marvel
                 </a>
               </p>
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" href="#">
+                <a className={styles.link} aria-current="page" >
                   Experties
                 </a>
               </p>
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" href="#">
+                <a className={styles.link} aria-current="page" >
                   Pricing
                 </a>
               </p>
 
               <p class="nav-item">
-                <a className={styles.link} aria-current="page" href="#">
+                <a className={styles.link} aria-current="page" >
                   Sign in
                 </a>
               </p>
